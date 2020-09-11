@@ -10,7 +10,6 @@ public class THtimGiaTriLonNhatTrongMang {
             size = scanner.nextInt();
             if (size > 20) {
                 System.out.println("ban nhap qua size toi da");
-
             }
         } while (size > 20);
         arr = new double[size];
@@ -33,8 +32,5 @@ public class THtimGiaTriLonNhatTrongMang {
             }
         }
         System.out.println("so tien lon nhat la: " + max + "va vi tri trong list là: " +index);
-
-
-
     }
 }
