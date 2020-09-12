@@ -2,38 +2,38 @@ import java.util.Scanner;
 
 public class CacCachThaoTacVoiMang {
     public static void main(String[] args) {
-//        int matrix[][] = new int[5][5];
-        int matrix[][]= {
-                {4,3,5},
-                {3,4,2},
-                {7,3,9}
-        };
+        int matrix[][] = new int[5][5];
+//        int matrix[][]= {
+//                {4,3,5},
+//                {3,4,2},
+//                {7,3,9}
+//        };
 
 //        nhập từ bàn phím mảng 1 chiều:
 
         //         Khai báo các biến, nhập và kiểm tra kích thước mảng :
-        int size;
-        int[] array;
-        Scanner scanner =new Scanner(System.in);
-        do{
-            System.out.println("input a size: ");
-            size= scanner.nextInt();
-            if(size>20){
-                System.out.println("size vuot qua");
-            }
-        }while (size>20);
-//       nhập giá trị cho các phần tử:
-        array = new int[size];
-        int i =0;
-        while (i<array.length){
-            System.out.println("input element " + (i+1)+ ": ");
-            array[i] = scanner.nextInt();
-            i++;
-            System.out.printf("%-20s%s","Elements in array: ", "");
-            for (int j = 0; j < array.length; j++) {
-                System.out.print(array[j] + "\t");
-            }
-        }
+//        int size;
+//        int[] array;
+//        Scanner scanner =new Scanner(System.in);
+//        do{
+//            System.out.println("input a size: ");
+//            size= scanner.nextInt();
+//            if(size>20){
+//                System.out.println("size vuot qua");
+//            }
+//        }while (size>20);
+////       nhập giá trị cho các phần tử:
+//        array = new int[size];
+//        int i =0;
+//        while (i<array.length){
+//            System.out.println("input element " + (i+1)+ ": ");
+//            array[i] = scanner.nextInt();
+//            i++;
+//            System.out.printf("%-20s%s","Elements in array: ", "");
+//            for (int j = 0; j < array.length; j++) {
+//                System.out.print(array[j] + "\t");
+//            }
+//        }
 
 
 
@@ -42,14 +42,24 @@ public class CacCachThaoTacVoiMang {
 
 //        nhạp mảng từ bàn phím mang 2 chieu:
 
-//        java.util.Scanner input = new Scanner(System.in);
-//        System.out.println("Enter " + matrix.length + " rows and " +
-//                matrix[0].length + " columns: ");
-//        for (int row = 0; row < matrix.length; row++) {
-//            for (int column = 0; column < matrix[row].length; column++) {
-//                matrix[row][column] = input.nextInt();
-//            }
-//        }
+        java.util.Scanner input = new Scanner(System.in);
+        System.out.println("Enter " + matrix.length + " rows and " +
+                matrix[0].length + " columns: ");
+        for (int row = 0; row < matrix.length; row++) {
+            for (int column = 0; column < matrix[row].length; column++) {
+
+                matrix[row][column] = input.nextInt();
+            }
+
+        }
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                System.out.println(matrix[i][j]);
+            }
+        }
+
+
+
 
 
 
@@ -86,10 +96,10 @@ public class CacCachThaoTacVoiMang {
 //        tính tổng từng cột:
 //        for (int column = 0; column < matrix[0].length; column++) {
 //            int total = 0;
-//            for (int row = 0; row < matrix.length; row++)
+//            for (int row = 1; row < matrix.length; row++)
 //                total += matrix[row][column];
-//            System.out.println("Sum for column " + column + " is "
-//                    + total);
+//            System.out.println("Sum for column " + column + " is " + total);
+//            break;
 //        }
 
 
